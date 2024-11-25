@@ -1,15 +1,10 @@
-function setup() {
-    createCanvas(400, 400);
-    background("white")
-  }
-  
-  function draw() {
-    stroke("blue");
-    fill("red");
-    
-    
-    if (mouseIsPressed) {
-      rect(mouseX, mouseY, 20, 35);
-    }
-  }
-  
+// Função de scroll suave
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
