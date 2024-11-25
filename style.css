@@ -5,86 +5,145 @@
     box-sizing: border-box;
 }
 
-/* Estilos globais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
     color: #333;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #2d3e50;
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
-    color: white;
 }
 
 header h1 {
-    text-align: center;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-left: 20px;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
+    float: right;
+    margin-top: 10px;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Seções */
-section {
-    padding: 60px 0;
+/* Seção sobre */
+#sobre {
+    background-color: #fff;
+    padding: 40px 0;
     text-align: center;
 }
 
-section h2 {
+#sobre p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+/* Seção de projetos */
+#projetos {
+    background-color: #e3e3e3;
+    padding: 40px 0;
+}
+
+#projetos h2 {
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 20px;
+}
+
+.projeto-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .projeto {
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    width: 30%;
+    margin-bottom: 20px;
     padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .projeto h3 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #2d3e50;
-    font-weight: bold;
+.projeto button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+.projeto button:hover {
+    background-color: #444;
 }
 
+/* Seção de contato */
+#contato {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* Rodapé */
 footer {
-    background-color: #2d3e50;
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
     text-align: center;
-    color: white;
 }
